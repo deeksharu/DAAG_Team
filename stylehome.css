@@ -90,15 +90,16 @@ header {
 	/* border: 1px solid rgb(19, 122, 27);	 */
 
 	border: 1px solid #fff;					/*for login button*/
-	padding: 10px 25px;
+	padding: 10px 25px;						/*login box size*/
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;
-	margin-top: 350px;				/*login button placing from above text*/
+	margin-top: 225px;				/*login button placing from above text*/
 	display: inline-block;
 	/* color: #fff; */
 	color: rgb(168, 50, 14);
-	
+	position: fixed;
+	left: 640px;				/*center */	
 } 
  .welcome-text a:hover {
 	/* background: #fff; */

@@ -57,7 +57,8 @@ input[type=submit]:hover {
 .col-25 {    
   float: left;    
   width: 25%;    
-  margin-top: 6px;    
+  margin-top: 6px;  
+  font-size: 20px;              /*added*/
 }    
     
 .col-75 {    
@@ -79,7 +80,15 @@ body {
   background-size: 100% 150%;
   
 }
-    
+h2 b{                               /*added*/
+  color: aquamarine;
+  font-size: 30px;
+}
+.inputfield b{
+  color: rgb(13, 15, 14);
+  font-size: 20px;
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
 </style>    
 </head> 
@@ -87,7 +96,7 @@ body {
 <body>    
 <h2><b>NEW FIR REGISTER</b></h2> <br>   
 <div class="container">    
-  <form>    
+  <form action="lastpage.html">               
     <div class="row">    
       <div class="col-25">    
         <label for="fname">crime id</label>    
@@ -115,24 +124,25 @@ body {
     </div>  
     <!-- <br/> -->
     <div class="inputfield">
-      <label>Upload file</label>
+      <label><b>Upload file</b></label>
       <!-- <img src="crime.jpg" alt="evidence" -->
       <input type="file" class="input">
 
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> audio</label>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> video</label>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> image</label>
+        <label for="vehicle1"><b> audio</b></label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+        <label for="vehicle2"><b> video</b></label>
+        <input type="checkbox" id="vehicle2" name="vehicle3" value="auto">
+        <label for="vehicle3"><b> image</b></label>
 
    </div> 
    <img src="Evidence.jpg" alt="evidence" width="250" height="100">  
     <div class="row">    
-      <input type="submit" value="Submit">    
+      <input type="submit" value="Submit" onclick="lastpage.html">    
     </div>    
-  </form>    
-</div>    
-    
+  </form>   
+  
+</div> 
+   
 </body>    
 </html>    
